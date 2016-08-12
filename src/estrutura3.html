@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input type="button" onclick="digaOi()" value="oi2">
+
+    <p></p>
+    <p class= "paragrafo"></p>
+    <p id= "paragrafoID"></p>
+
+    <script>
+
+    document.getElementsByTagName("p")[0].innerHTML = "pegando o primeiro tage";
+      document.getElementById("paragrafoID").innerHTML = "pegando o id";
+      document.getElementsByClassName("paragrafo")[0].innerHTML ="pegando o primeiro elemento do parafgrafo";
+
+
+
+    document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+    document.getElementsByTagName("p")[0].style.backgroundColor = "red";
+    document.getElementsByTagName("p")[1].style.backgroundColor = "white";
+
+    </script>
+  </body>
+</html>
