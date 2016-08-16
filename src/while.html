@@ -6,15 +6,13 @@
 
     <script>
 
-
-
     function functionName() {
-      var n = 0;
+      var n = 1;
       var fat = document.getElementById("fator").value;
       var texto;
 
       while (n <= document.getElementById('indice').value) {
-        texto = `${fat} X ${n} = `+ (fat+n);
+        texto += `${fat} X ${n} = ${fat*n} \n`;
         n++;
       }
 
@@ -25,8 +23,8 @@
 
   </head>
   <body>
-    <input type="number" name="fator" value="">
-    <input type="number" name="indice" value="">
+    <input type="text" name="fator" value="" id="fator">
+    <input type="text" name="indice" value="" id="indice">
     <input type="button" name="name" value="tabuada" onclick="functionName()">
   </body>
 </html>
