@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+
+
+
+    function functionName() {
+      var n = 0;
+      var fat = document.getElementById("fator").value;
+      var texto;
+
+      while (n <= document.getElementById('indice').value) {
+        texto = `${fat} X ${n} = `+ (fat+n);
+        n++;
+      }
+
+      alert(texto);
+    }
+
+    </script>
+
+  </head>
+  <body>
+    <input type="number" name="fator" value="">
+    <input type="number" name="indice" value="">
+    <input type="button" name="name" value="tabuada" onclick="functionName()">
+  </body>
+</html>
