@@ -22,19 +22,3 @@ function calcularNotas(){
   alert(resultado);
 
 }
-
-function adicionarCarro(){
-  var carros = [];
-  var codico = document.getElementById("codigo").value;
-  var fab = document.getElementById("fabricante").value;
-  var modelo = document.getElementById("modelo").value;
-
-  carros.push(codico,fab,modelo);
-  alert(`Codigo= ${carros[0]}`);
-  return carros;
-}
-
-function mostrarCarros(){
-
-
-}
