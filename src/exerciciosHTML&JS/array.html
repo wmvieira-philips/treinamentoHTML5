@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-  <script type="text/javascript" src="digaOi.js"></script>
+  <script type="text/javascript" src="ArrayEvent.js"></script>
   </head>
   <body>
     <p>
       <label for="Codigo">Codigo:</label>
       <input type="number" name="codigo" value="" id="codigo">
-    </p>
 
-    <p>
+
+
     <label for="fabricante">fabricante:</label>
     <input type="text" name="fabricante" value="" id="fabricante">
-    </p>
 
-    <p>
+
+
       <label for="modelo">modelo:</label>
       <input type="text" name="modelo" value="" id="modelo">
     </p>
 
-    <input type="button" name="name" value="Adicionar carro" onclick="adicionarCarro()">
+    <input type="button" name="name" value="Adicionar carro" onclick="adicionarCarro(codigo,fabricante,modelo)">
     <input type="button" name="name" value="Mostrar carros" onclick="mostrarCarros()">
 
   </body>

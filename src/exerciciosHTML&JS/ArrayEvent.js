@@ -1,9 +1,9 @@
-var carros [];
+var carros = [{codigo:"",fabricante:"",modelo:""}];
 
-function functionName() {
-
+function adicionarCarro(codigo,fabricante,modelo) {
+  carros.push(codigo=codigo.value,fabricante=fabricante.value,modelo=modelo.value);
 }
 
-function functionName() {
-
+function mostrarCarros() {
+  alert(carros.codigo.value);
 }
