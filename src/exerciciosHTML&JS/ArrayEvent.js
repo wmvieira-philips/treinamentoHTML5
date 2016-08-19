@@ -1,9 +1,14 @@
-var carros = [{codigo:"",fabricante:"",modelo:""}];
+var carros = [];
 
 function adicionarCarro(codigo,fabricante,modelo) {
-  carros.push(codigo=codigo.value,fabricante=fabricante.value,modelo=modelo.value);
+  carros.push({nome:codigo.value,fab:fabricante.value,mod:modelo.value});
 }
 
 function mostrarCarros() {
-  alert(carros.codigo.value);
+  var text;
+  for (var i = 0; i < carros.length; i++) {
+    text = `Código: ${carros[i].nome} fabricante: ${carros[i].fab} Modelo: ${carros[i].mod}`
+  alert(text);
+  }
+
 }

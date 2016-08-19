@@ -1,0 +1,23 @@
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.nome.$error.required">
+<p>Campo nome obrigatório!</p>
+</div>
+
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.telefone.$error.required">
+<p>Campo telefone obrigatório!</p>
+</div>
+
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.nome.$error.minlength">
+<p>Tamanho do nome menor que o permitidoo 10!</p>
+</div>
+
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.telefone.$error.minlength">
+<p>Tamanho do campo telefone permitioo 10!</p>
+</div>
+
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.nome.$error.maxlength">
+<p>Tamanho maximo do campo nome 40!</p>
+</div>
+
+<div class="alert alert-danger" ng-show="contatoForm.nome.$dirty && contatoForm.telefone.$error.maxlength">
+<p>Tamanho maximo do campo telefone 12!</p>
+</div>
