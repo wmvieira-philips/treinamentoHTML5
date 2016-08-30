@@ -21,7 +21,7 @@
       }
 
       var obterContatos = function () {
-        $http.get('http://10.125.2.49:8080/contatos').success((data) => {
+        $http.get('http://localhost:8080/contatos').success((data) => {
           $scope.contatos = data;
         }).error(()=>{
           console.log('deu porco');
